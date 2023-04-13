@@ -1,0 +1,14 @@
+{
+  "name": "project1v1",
+  "version": "1.0.0",
+  "description": "This is Project1V1 Practice Test.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node:sass sass/main.scss scc/style.css"
+  },
+  "author": "John Jang",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

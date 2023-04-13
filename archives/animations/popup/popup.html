@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pop up test</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/popup.css" rel="stylesheet" />
+    <script src="js/popup.js" defer></script>
+  </head>
+  <body>
+    <div class="popup" id="popup-1">
+      <div class="overlay">
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+          <div class="original-glassvu-card">
+            <img
+              class="original-glassvu"
+              src="images/televu/original_product/original_glassvu.jpg"
+              alt="Original GlassVU"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <a onclick="togglePopup()">Original GlassVU</a>
+  </body>
+</html>

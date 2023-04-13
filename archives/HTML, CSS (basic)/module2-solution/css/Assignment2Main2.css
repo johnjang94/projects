@@ -1,0 +1,41 @@
+
+body {
+	margin-right: 40px;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+h1 {
+	padding: 30px;
+	background-color: #C4A484;
+	margin-right: -40px;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+div {
+	background-color: #E1D2C4;
+	margin-left: 30px;
+	padding: -10px;
+}
+
+p {
+	padding-top: 10px; 
+	padding-left: 30px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	margin-right: -40px;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	background-color: #D3B683;
+	
+}
+
+h2 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+}
+
+

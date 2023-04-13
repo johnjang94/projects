@@ -1,0 +1,31 @@
+.row {
+    max-width: 1140px; //$gutter-width
+    background-color: #eee;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 80px; //$gutter-vertical
+    }
+
+    @include clearfix;
+
+    [class^="col-"] {
+        background-color: rgb(172, 106, 7);
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: 60px; //$gutter-horizontal
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{60px}) / 2); //$gutter-horizontal
+
+       
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2*#{60px}) / 3); //$gutter-horizontal
+    }
+}
+

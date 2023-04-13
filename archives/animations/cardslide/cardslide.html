@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Card Slide</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/slide.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.css"
+      integrity="sha256-UgiyZCTZggzgafOcD2wPMh1qoD00B/GiLu9UEp+ZOAo="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.js"></script>
+    <script src="js/slide.js"></script>
+
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
+  </head>
+  <body>
+    <div class="slidecontainer swiper">
+      <div class="slidecontent">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card-content">
+              <h1 class="name">Login Page</h1>
+              <p class="description">
+                The login process needs to be simplified.
+              </p>
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img
+                    src="image/login_page.jpeg"
+                    alt="Login Page"
+                    class="card-img"
+                  />
+                </div>
+              </div>
+              <p class="description">
+                The clinicians have pointed out that the login process needs to
+                be simplified.
+              </p>
+              <button class="button">View more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </body>
+</html>

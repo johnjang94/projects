@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+}
+
+/* Book */
+.book {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  transition: transform 0.5s;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+
+.front,
+.back {
+  background-color: #fafafa;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+  border-left: 3px solid lightgray;
+}
+
+.back {
+  z-index: 0;
+}
+
+.front-content,
+.back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-content {
+  transform: rotateY(180deg);
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.5s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover i {
+  color: #88d1f1;
+}
+
+i {
+  font-size: 50px;
+  color: #c8fbff;
+}
+
+/* Paper stack order */
+#p1 {
+  z-index: 4;
+}
+
+#p2 {
+  z-index: 3;
+}
+
+#p3 {
+  z-index: 2;
+}
+
+#p4 {
+  z-index: 1;
+}
+
+/* MODIFIED CONTENT DETAIL BELOW */
+/* MODIFIED CONTENT DETAIL BELOW */
+/* MODIFIED CONTENT DETAIL BELOW */
+
+.bookanimation {
+  position: absolute;
+  margin-top: -400px;
+}
+
+.probrief1 {
+  position: absolute;
+  padding: 20px;
+  margin-top: -200px;
+}
+
+.probrief2 {
+  position: absolute;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.goal {
+  position: absolute;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.tasks {
+  position: absolute;
+  padding: 30px;
+  margin-bottom: -250px;
+}
+
+/* PAGE 1 & 2 */
+.insights {
+  margin-top: 20px;
+}
+
+.lesson1 {
+  position: absolute;
+}
+
+/* PAGE 3 & 4 */
+.problem {
+  position: absolute;
+  padding: 30px;
+
+  margin-top: -70px;
+  margin-bottom: 150px;
+}
+
+/* NOT IN USE SETTINGS */
+/* NOT IN USE SETTINGS */
+/* NOT IN USE SETTINGS */
+/* NOT IN USE SETTINGS */
+/* NOT IN USE SETTINGS */
+
+/* .resize_smartglass {
+  width: 200px;
+  height: auto;
+  margin-top: -300px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.resize_suite {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+
+  position: absolute;
+  z-index: 1;
+} */
+
+/* span {
+  font-size: 10px;
+  text-align: center;
+
+  margin-top: -140px;
+} */
+
+/* .resize_laptop {
+  width: 170px;
+  height: auto;
+
+  position: absolute;
+  margin-top: 400px;
+  margin-left: -200px;
+  z-index: 1;
+}
+
+.resize_mobile {
+  width: 170px;
+  height: auto;
+
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 200px;
+  z-index: 1;
+} */
+
+/* .task_description {
+  position: absolute;
+  padding: 20px;
+  margin-top: 100px;
+} */
+
+/* .probrief3 {
+  position: absolute;
+  padding: 20px;
+  margin-top: 300px;
+} */
+
+/* .chall {
+  font-size: 20px;
+  text-decoration: underline;
+  color: red;
+} */

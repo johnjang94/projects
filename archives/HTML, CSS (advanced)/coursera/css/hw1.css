@@ -1,0 +1,29 @@
+
+		body {
+			font-family: "Times New Roman", serif-typeface;
+		}
+
+		h1 {
+			text-align: center;
+			text-transform: uppercase;
+			color: #FFFFFF;
+		}
+
+		h2 {
+			text-transform: uppercase;
+			color: #0000FF;
+		}
+
+		.menu {
+			text-decoration: underline;
+		}
+
+		#flavor {
+			background-color: #ADD8E6;
+		}
+
+		#flavour {
+			background-color: lightcyan;
+		}
+
+	</style>

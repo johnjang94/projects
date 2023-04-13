@@ -1,0 +1,184 @@
+<style>
+
+//For some reason, I cannot initate the connection between this and the main HTML,
+//so I have decided to just stick to the main page.
+
+	@import "abstract/functions";
+	@import "abstract/mixins";
+	@import "abstract/variables";
+
+	@import "base/animations";
+	@import "base/typography";
+	@import "base/utilities";
+	@import "base/base";
+
+	@import "pages/home";
+
+        $color-primary: #67ef94;
+        $color-primary-light: ;
+        $color-primary-dark: #2dc995;
+
+        * {
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: "Lato", sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1.7;
+			color: #777;
+			margin: 30px;
+		}
+
+		.header {
+			height:95vh;
+			background-image:
+				linear-gradient(to right bottom, rgba($color-primary, 0.8) , rgba($color-primary-dark, 0.8)), 
+				url(../Images/earth-mountain.jpeg);
+			background-size: cover;
+			background-position: top;
+			position: relative;
+			
+			clip-path: polygon(0 0px, 100% 0, 100% 80%, 0 100%);
+		}
+
+		.logo-box {
+			position: absolute;
+			top: 40px;
+			left: 60px;
+		}
+
+		.animation-box {
+			position: absolute;
+			top: 170px;
+			left: 60px;
+		}
+
+		.logo {
+			width: 100px;
+			height: 100px;
+		}
+
+		.heading-primary {
+			color: #FFFFFF;
+			margin-left: 450px;
+			margin-top: 30px
+		}
+
+		.heading-primary-main {
+			font-size: 40px;
+			font-weight: lighter;
+			letter-spacing: 30px;
+
+			animation-name: moveinleft;
+			animation-direction: normal;
+			animation-duration: 3s;
+		}
+
+		.heading-primary-sub {
+			font-size: 20px;
+			letter-spacing: 11.7px;
+
+			animation-name: moveinright;
+			animation-direction: normal;
+			animation-duration: 3s;
+		}
+
+		.button {
+			box-sizing: border-box;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 40px;
+			padding-right: 40px;
+			border-radius: 25px;
+			border-color:#FFFFFF;
+			background-color: #FFFFFF;
+			text-align: center;
+			margin-left: 550px;
+			margin-top: 50px;
+
+			animation: moveinbottom;
+			animation-duration: 3s;
+		}
+
+		@keyframes moveinleft {
+			0% {
+				opacity: 0;
+				transition: translate(-100px, 0%);
+			}
+
+			100% {
+				opacity: 1;
+				transition: translate(0);
+			}
+		}
+
+		@keyframes moveinright {
+			0% {
+				opacity: 0;
+				transition: translate(0, -100%);
+			}
+
+			100% {
+				opacity: 1;
+				transition: translate(0);
+			}
+		}
+
+		@keyframes moveinbottom {
+			0% {
+				opacity: 0;
+				transition: translate(0, 0, -50px);
+			}
+
+			100% {
+				opacity: 1;
+				transition: translate(0);
+			}
+		}
+
+		.btn:link,
+		.btn:visited {
+			text-decoration: none;
+			transition: all .2s;
+			position: relative;
+		}
+
+		.btn:hover {
+			transform: translateY(-3px);
+			box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.btn:active {
+			transform: translateY(-1px);
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.btn::after {
+			content:"";
+			box-sizing: border-box;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 195px;
+			padding-right: 40px;
+			border-radius: 25px;
+			border-color:#FFFFFF;
+			background-color: #FFFFFF;
+			margin-left: -195px;
+			margin-top: -5px;
+			position: absolute;
+			z-index: -1px;
+			visibility: hidden;
+			transition: all 0.4s;
+		}
+
+		.btn:hover::after {
+			transform: scaleX(1.5) scaleY(3.5);
+			visibility: visible;
+			opacity: 0%;
+		}
+
+	</style>
