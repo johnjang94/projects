@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Game Project</title>
+    <link rel="stylesheet" href="../up&down_v2/css/up&down.css" />
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <p>
+      Welcome to my mini game project.<br />
+      <br />
+      On this web page, you will play a guessing game either just by yourself or
+      with your friends.
+    </p>
+    <div>
+      <p>Please read the following rules:</p>
+    </div>
+    <div>
+      <ol>
+        <h2>Rules</h2>
+        <li>You can only guess a random number between 1 and 100</li>
+        <li>
+          You will be given a total of 5 chances to guess the number that the
+          game system has generated<br />
+          (No, you will not know the correct number until you've guessed it
+          correctly)
+        </li>
+        <br />
+        <li>
+          You can only guess the whole number. No decimals are accepted<br /><br />
+          <ul>
+            ** Accepted numbers:
+            <li>34 ✅</li>
+            <li>30 ✅</li>
+            <li>27 ✅</li>
+            <br />
+          </ul>
+          <ul>
+            ** Not accepted numbers:
+            <li>34.2 ❌</li>
+            <li>35.8 ❌</li>
+            <li>12.5 ❌</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          Your chance will be deducted every time you guess incorrectly. Once
+          your chance reaches at 0, you will not be able to play the game
+          anymore.
+        </li>
+      </ol>
+    </div>
+    <div class="conditions">
+      <p>
+        Please remember the following conditions as well:
+        <li>
+          If you try to guess any number below 1 or above 100, you will be
+          reminded to guess a random number within the range.
+        </li>
+        <li>
+          If you try to guess any number with decimals, you will be reminded to
+          guess with whole numbers.
+        </li>
+        <li>
+          If you try to guess the same number twice, you will be reminded to try
+          a different number.
+        </li>
+        <li>Your chance will not be deducted if you make above attempts.</li>
+      </p>
+    </div>
+    <div>
+      <h1>Are you ready to play the game?</h1>
+      <img
+        src="../up&down_v2/images/opening.gif"
+        alt="Opening"
+        class="opening"
+      /><br />
+      <a href="../up&down_v2/game.html">
+        <button class="play">Let's go!</button>
+      </a>
+    </div>
+  </body>
+</html>
