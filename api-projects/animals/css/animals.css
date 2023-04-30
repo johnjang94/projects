@@ -1,0 +1,95 @@
+/* ======== ENTIRE DOCUMENT ======= */
+body {
+  background-image: url("../images/backgroundimg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  box-sizing: border-box;
+  border: 0.5px solid lightgrey;
+  border-radius: 25px;
+
+  background-color: rgba(245, 245, 245, 0.8);
+
+  margin-top: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+
+  background-color: transparent;
+}
+
+/* ======== SEARCH AREA ======= */
+.text-container {
+  max-width: 800px;
+
+  padding: 5px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.search-button {
+  border: none;
+  background-color: transparent;
+
+  font-size: 25px;
+}
+
+/* ======== SEARCH AREA ======= */
+.info-cover {
+  box-sizing: border-box;
+  border-bottom: 1px dotted lightgrey;
+
+  margin-bottom: 30px;
+}
+
+.animal_name {
+  margin-left: -710px;
+}
+
+.notice {
+  margin-top: 20px;
+  margin-left: -500px;
+}
+
+.line {
+  display: flex;
+}
+
+.detail {
+  justify-content: center;
+  margin-left: -630px;
+}
+
+.responses {
+  margin-left: 10px;
+}
+
+.gap {
+  margin-top: -10px;
+}
+
+.first-gap {
+  margin-top: 10px;
+}
+
+.habitat {
+  margin-left: -70px;
+}
+
+.food {
+  margin-left: -115px;
+}
+
+.slogan {
+  margin-left: -65px;
+}

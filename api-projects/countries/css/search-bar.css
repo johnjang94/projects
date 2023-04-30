@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1600px) {
+  .user-input {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .user-input {
+    width: 980px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .user-input {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .user-input {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .user-input {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .user-input {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .user-input {
+    width: 240px;
+  }
+}

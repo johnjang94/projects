@@ -1,0 +1,81 @@
+@import url(../css/search-bar.css);
+
+body {
+  background-image: url(../images/countries.jpeg);
+  background-repeat: none;
+  background-size: 115%;
+}
+
+.container {
+  box-sizing: border-box;
+  border: 0.5px solid whitesmoke;
+  border-radius: 25px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  padding: 30px;
+
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.searchbox {
+  text-align: center;
+}
+
+.user-input {
+  border-radius: 15px;
+  border: 0.5px solid black;
+
+  padding: 5px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+nav {
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  border-bottom: 1px solid lightgrey;
+  max-width: 1000px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+
+  padding: 10px 10px 30px 10px;
+
+  font-size: 25px;
+}
+
+button:hover {
+  color: peru;
+}
+
+/* it is possible that I need to change the color in javascript instead */
+button:click::after {
+  color: purple;
+}
+
+/* ======= MAIN CONTENTS ======== */
+.country-info {
+  border-bottom: 0.5px solid black;
+
+  padding: 10px 10px 10px 50px;
+}
+
+p {
+  padding-left: 60px;
+}

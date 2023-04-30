@@ -10,14 +10,22 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../to_do_list_v2/css/style.css" />
+    <title>First To-Do List Web Application</title>
   </head>
   <body>
+    <img
+      src="../to_do_list_v2/images/left arrow.jpg"
+      alt="Left arrow"
+      class="back"
+    />
+    <button class="back-button">
+      <a href="../index.html">Back</a>
+    </button>
     <div class="container">
       <h1>To Do List</h1>
       <section class="input-area">
-        <input type="text" onfocus="this.value=''" id="task-input" autofocus />
+        <input type="text" onfocus="this.value=''" id="task-input" />
         <button class="plus" id="add-button">+</button>
       </section>
       <section class="task-area">
@@ -35,6 +43,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
+    <script src="../to_do_list_v2/js/main.js"></script>
   </body>
 </html>

@@ -1,11 +1,39 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 
-  background-image: url(../to_do_list/images/spring.jpg);
+  background-image: url(../images/spring.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   margin-top: 50px;
+}
+
+.back {
+  width: 25px;
+  height: auto;
+
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.back-button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+
+  font-size: 20px;
+
+  margin-top: 37px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: white;
+  color: peru;
 }
 
 .container {
@@ -14,10 +42,15 @@ body {
   border-radius: 20px;
   background-color: rgba(240, 255, 255, 0.9);
 
+  max-height: 500px;
+  overflow: scroll;
+
   padding: 50px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  margin-top: 30px;
 }
 
 .plus {
@@ -32,6 +65,9 @@ body {
 
 .task-area {
   border: 1px lightgrey solid;
+
+  max-height: 450px;
+  overflow: scroll;
 }
 
 .task-tabs {
